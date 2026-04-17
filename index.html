@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>Drifted</title>
+  <meta name="title" content="Drifted - No1 Nigeria Digital Solutions">
+  <meta name="description" content="Drifted is a leading digital solutions provider based in Nigeria, offering top-notch web development, design, and digital marketing services to help businesses thrive in the online world.">
+
+ 
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="./assets/css/require.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+
+  <link rel="preload" href="./assets/images/hero-banner.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="preloader" data-preloader>
+    <div class="preloader-circle"></div>
+  </div>
+
+
+
+
+
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <div class="logo-wrapper">
+  <div class="drifted-logo">
+    <span class="accent">drifted</span>
+  </div>
+  <div class="tagline">No1 Nigeria DIGITAL SOLUTIONS</div>
+</div>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="label-lg navbar-link has-after active">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./service.html" class="label-lg navbar-link has-after">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./portfolio.html" class="label-lg navbar-link has-after">Portfolio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./contact.html" class="label-lg navbar-link has-after">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="./contact.html" class="btn btn-primary">Contact Now</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+     
+      <section class="section hero" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">👋, Welcome to Drifted</p>
+
+            <h1 class="headline-lg">We build website for Upcoming brands or vendors</h1>
+
+            <p class="hero-text body-md">
+              Based in Nigeria 🇳🇬.
+            </p>
+
+            <a href="./contact.html" class="btn btn-primary">Contact Us</a>
+
+          </div>
+
+          <div class="hero-image-wrapper">
+  <div class="glow-accent"></div>
+  
+  <figure class="hero-banner-premium">
+    <div class="image-overlay"></div>
+    
+    <img src="./assets/images/hmm.png" 
+         width="640" height="640"
+         alt="Lead developer at Drifted working on a high-performance web project" 
+         class="hero-img">
+
+    <div class="floating-badge">
+      <span class="pulse"></span>
+      Direct from Lagos
+    </div>
+  </figure>
+</div>
+
+<style>
+:root {
+  --brand-orange: #FF5F1F;
+  --dark-bg: #121212;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+}
+
+
+.glow-accent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  background: var(--brand-orange);
+  filter: blur(80px);
+  opacity: 0.15;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.hero-banner-premium {
+  position: relative;
+  margin: 0;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  background: var(--dark-bg);
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+
+.hero-banner-premium:hover .hero-img {
+  transform: scale(1.03);
+}
+
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 60%, rgba(18, 18, 18, 0.6));
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+.floating-badge {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 3;
+}
+
+.pulse {
+  width: 8px;
+  height: 8px;
+  background: var(--brand-orange);
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(255, 95, 31, 0.4);
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% { box-shadow: 0 0 0 0px rgba(255, 95, 31, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 95, 31, 0); }
+  100% { box-shadow: 0 0 0 0px rgba(255, 95, 31, 0); }
+}
+</style>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CLIENT
+      -->
+
+      
+      
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta">
+        <div class="container">
+          <h2 class="title-lg">Intrested working with Drifted?</h2>
+
+          <a href="./contact.html" class="btn btn-tertiary">Contact Now</a>
+        </div>
+      </section>
+
+
+
+
+
+
+      <section class="section testi" aria-labelledby="testi-label">
+        <div class="container">
+
+          <h2 class="headline-md section-title text-center" id="testi-label">Testimonial</h2>
+
+          <ul class="slider">
+
+            <li class="slider-item card-container">
+              <div class="card card-lg">
+
+                
+
+                <div class="card-content">
+
+                  <blockquote class="body-sm">
+                    You know When I worked with Drifted, It was just a solo person Who built a full eccomerce website for me, I was realy impressed by the quality of work and the speed of delivery, I will definetly work with drifted again. 🤝🇳🇬
+
+                  <p class="client-name">Adekunle Taiwo</p>
+
+                  <p class="client-title">CEO at Stasis</p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="slider-item card-container">
+              <div class="card card-lg">
+
+                
+
+                <div class="card-content">
+
+                  <blockquote class="body-sm">
+                    I am so happy working with Drifted, I have been looking for a web developer for a long time, but I never found anyone who can deliver the quality of work that Drifted delivered, I will definetly work with drifted again in the future. 🤝😛
+                  </blockquote>
+
+                  <p class="client-name">Jennifer Okoye</p>
+
+                  <p class="client-title">CEO at Area 6.7</p>
+
+                </div>
+
+              </div>
+            </li>
+
+            
+
+           
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-pinterest"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="text-center">&copy; 2026 copyright all right reserved</p>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="./assets/js/script.js"></script>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
